@@ -51,6 +51,8 @@ services:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPENAI_BASE_URL=https://llm.aws.portalos.ru
+      - OPENAI_API_URL=https://llm.aws.portalos.ru
     depends_on:
       - postgres
     networks:
