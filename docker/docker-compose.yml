@@ -46,6 +46,7 @@ services:
     ports:
       - "9991:9991"
     environment:
+      - BYTEBOT_LLM_PROXY_URL=${BYTEBOT_LLM_PROXY_URL:-https://llm.aws.portalos.ru}
       - DATABASE_URL=${DATABASE_URL:-postgresql://postgres:postgres@postgres:5432/bytebotdb}
       - BYTEBOT_DESKTOP_BASE_URL=${BYTEBOT_DESKTOP_BASE_URL:-http://bytebot-desktop:9990}
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
