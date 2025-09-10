@@ -1,4 +1,4 @@
-FROM ghcr.io/berriai/litellm:main-stable
+FROM ghcr.io/berriai/litellm:main-latest
 
 # Add custom config into the image
 COPY ./bytebot-llm-proxy/litellm-config.yaml /app/config.yaml
