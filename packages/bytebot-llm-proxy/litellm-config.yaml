@@ -17,9 +17,9 @@ model_list:
       model: openai/gpt-4.1
       api_key: os.environ/OPENAI_API_KEY
       api_base: https://llm.portalos.online
-  - model_name: gpt-4o
+  - model_name: o3-mini
     litellm_params:
-      model: openai/gpt-4o
+      model: openai/o3-mini
       api_key: os.environ/OPENAI_API_KEY
       api_base: https://llm.portalos.online
 
